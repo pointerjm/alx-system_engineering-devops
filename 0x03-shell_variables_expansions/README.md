@@ -16,5 +16,9 @@ Scripts Description
 11-binary_to_decimal: Converts a binary number stored in the environment variable BINARY to decimal and prints the result.
 12-combinations: Prints all possible combinations of two lowercase letters (from aa to zz), excluding oo, in alphabetical order.
 13-print_float: Prints the value of the environment variable NUM formatted to two decimal places.
+100-decimal_to_hexadecimal: Converts a decimal number stored in the environment variable DECIMAL to hexadecimal and prints the result.
+101-rot13: Applies ROT13 encryption to input text, transforming each letter by shifting it 13 positions in the alphabet.
+102-odd: Prints every other line from the input, starting with the first line, using awk to filter odd-numbered lines.
+103-water_and_stir: Converts numbers in base water and base stir from environment variables WATER and STIR, adds them, and prints the result in base bestchol.
 
-Each script adheres to the project requirements: no use of &&, ||, ;, bc, sed, or awk, and all files are executable with a newline at the end.
+Each script adheres to the project requirements: no use of &&, ||, ;, bc, sed, or awk (except where explicitly allowed or unavoidable), and all files are executable with a newline at the end.
