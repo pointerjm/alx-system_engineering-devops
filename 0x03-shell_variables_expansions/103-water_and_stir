@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%s\n" $(echo "obase=bestchol;ibase=water;$WATER+$(echo "ibase=stir.;$STIR" | tr 'stir.' '01234')" | tr 'water' '01234' | bc)
+echo $(( $(echo $WATER | tr 'water' 01234 | awk '{print "ibase=5;"$1}' | bc) + $(echo $STIR | tr 'stir.' 01234 | awk '{print "ibase=5;"$1}' | bc) )) | awk '{n=$1; d="bestchol"; r=""; while(n){r=substr(d,n%8+1,1)r; n=int(n/8)}; print r}'
